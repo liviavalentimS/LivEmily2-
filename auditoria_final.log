@@ -1,0 +1,74 @@
+==============================================
+ TESTE CRUD - API DE FROTAS
+ Data: 22/10/2026 19:29:56
+ Base: http://localhost:4000/api/v1
+==============================================
+
+[1] HEALTH CHECK
+{
+  "status": "ok",
+  "uptime_segundos": 1.02,
+  "memoria": {
+    "rss_mb": 66.8,
+    "heapTotal_mb": 16.48,
+    "heapUsed_mb": 8.17
+  },
+  "timestamp": "2026-10-22T19:29:56.916Z"
+}
+
+[2] POST - Criando veículo
+{
+  "id": 1,
+  "placa": "ABC-1234",
+  "modelo": "Fiat Strada",
+  "ano": 2023,
+  "status": "disponivel"
+}
+>>> ID capturado: 1
+
+[3] GET - Buscando veículo 1
+{
+  "id": 1,
+  "placa": "ABC-1234",
+  "modelo": "Fiat Strada",
+  "ano": 2023,
+  "status": "disponivel"
+}
+
+[4] PATCH - Atualizando status do veículo 1
+{
+  "id": 1,
+  "placa": "ABC-1234",
+  "modelo": "Fiat Strada",
+  "ano": 2023,
+  "status": "em_manutencao"
+}
+
+[5] PUT - Substituindo veículo 1
+{
+  "id": 1,
+  "placa": "XYZ-9876",
+  "modelo": "VW Saveiro",
+  "ano": 2024,
+  "status": "disponivel"
+}
+
+[6] DELETE - Removendo veículo 1
+{
+  "mensagem": "Veículo removido",
+  "veiculo": {
+    "id": 1,
+    "placa": "XYZ-9876",
+    "modelo": "VW Saveiro",
+    "ano": 2024,
+    "status": "disponivel"
+  }
+}
+
+[7] GET - Confirmando remoção (esperado: 404)
+HTTP 404
+Remoção confirmada
+
+==============================================
+ TESTE FINALIZADO
+==============================================
