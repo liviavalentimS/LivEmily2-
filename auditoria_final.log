@@ -1,6 +1,6 @@
 ==============================================
  TESTE CRUD - API DE FROTAS
- Data: 22/10/2026 19:29:56
+ Data: 22/10/2026 19:37:39
  Base: http://localhost:4000/api/v1
 ==============================================
 
@@ -9,11 +9,11 @@
   "status": "ok",
   "uptime_segundos": 1.02,
   "memoria": {
-    "rss_mb": 66.8,
-    "heapTotal_mb": 16.48,
-    "heapUsed_mb": 8.17
+    "rss_mb": 66.06,
+    "heapTotal_mb": 16.73,
+    "heapUsed_mb": 8.14
   },
-  "timestamp": "2026-10-22T19:29:56.916Z"
+  "timestamp": "2026-10-22T19:37:39.100Z"
 }
 
 [2] POST - Criando veículo
